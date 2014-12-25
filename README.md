@@ -5,7 +5,7 @@ Plain simple TODO app
 
 Written with [AngularJS](http://angularjs.org), styled with [Bootstrap](http://getbootstrap.com/), [Flatly theme](http://bootswatch.com/flatly/).
 
-![Screenshot](./screenshot.png)
+![Screenshot](./screenshot2.png)
 
 ### Install
 
