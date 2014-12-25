@@ -9,26 +9,26 @@ Written with [AngularJS](http://angularjs.org), styled with [Bootstrap](http://g
 
 ### Install
 
-1. Install [nvm](https://github.com/creationix/nvm)
+Install [nvm](https://github.com/creationix/nvm)
 
 ```
 curl https://raw.githubusercontent.com/creationix/nvm/v0.21.0/install.sh | bash
 ```
 
-2. Install stable [nodejs](http://nodejs.org/) version:
+Install stable [nodejs](http://nodejs.org/) version:
 
 ```
 nvm install stable
 nvm use stable
 ```
 
-3. (Optional) Update [npm](https://www.npmjs.com/) to latest version:
+(Optional) Update [npm](https://www.npmjs.com/) to latest version:
 
 ```
 npm install npm -g
 ```
 
-4. Install dependent packages:
+Install dependent packages:
 
 ```
 npm install
@@ -37,14 +37,30 @@ npm install
 
 ### Run tests
 
-1. End-to-end tests:
+End-to-end tests:
 
 ```
 npm run protractor
 ```
 	
-2. Unit tests:
+ Unit tests:
 
 ```
 npm test
+```
+
+### Generate optimized version
+
+
+Install [grunt](http://gruntjs.com/):
+
+```
+npm install -g bower
+bower install grunt
+```
+
+Generate optimized app into `dist` folder:
+
+```
+grunt
 ```

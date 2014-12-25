@@ -4,10 +4,16 @@
 <head>
 	<meta charset="utf-8">
 	<title>Todogular</title>
+
+	<!-- build:css css/app-name.min.css -->
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/app.css">
+	<!-- endbuild -->
+
+	<!-- build:js js/app-name.min.js -->
 	<script src="bower_components/angular/angular.js"></script>
 	<script src="js/app.js"></script>
+	<!-- endbuild -->
 </head>
 
 <body ng-controller="TodoCtrl as vm">
@@ -28,7 +34,7 @@
 			</ul>
 			<button ng-click="vm.clearDoneItems()" class="btn btn-success">Clear completed</button>
 		</div>
-		
+
 	</div>
 </body>
 
