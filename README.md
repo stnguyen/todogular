@@ -1,9 +1,9 @@
 Plain simple TODO app
 ===
 
-
-
 Written with [AngularJS](http://angularjs.org), styled with [Bootstrap](http://getbootstrap.com/), [Flatly theme](http://bootswatch.com/flatly/).
+
+[Live demo](http://tracau.nhanh.de/todogular/)
 
 ![Screenshot](./screenshot2.png)
 
