@@ -3,15 +3,13 @@ var app = angular.module("app", []);
 app.controller("TodoCtrl", [function() {
 	var vm = this;
 
+	vm.newTodo = "";
 	vm.todos = [];
 
-	vm.add = function(item) {
-		vm.todos.push(item);
+	vm.addNewTodo = function() {
+		vm.todos.push({ title: vm.newTodo, done: false });
+		vm.newTodo = "";
 	};
-
-	vm.updateStatus = function(id, done) {
-		vm.todos[id].done = done;
-	}
 
 	vm.clearDoneItems = function() {
 		vm.todos = vm.todos.filter(function(item) {

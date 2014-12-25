@@ -1,1 +1,9 @@
-/* app css stylesheet */
+.list-group-item.done {
+	text-decoration: line-through;
+	color: #ddd;
+	background-color: 
+}
+
+#todoLst {
+	margin-top:20px;
+}

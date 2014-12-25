@@ -20,28 +20,15 @@ describe("TodoCtrl", function() {
 		expect(scope.vm.todos.length).toBe(0);
 	});
 
-	describe("add(item)", function() {
-		it("should add the item to todo list", function() {
+	describe("addNewTodo()", function() {
+		it("should add newTodo to todo list", function() {
 			scope.vm.todos = [];
+			scope.vm.newTodo = "new item";
 
-			var item = { title: "new item", done: false };
-			scope.vm.add(item);
+			scope.vm.addNewTodo();
+
+			var item = { title: scope.vm.newTodo , done: false };
 			expect(scope.vm.todos).toEqualData([item]);
-		});
-	});
-
-	describe("updateStatus(id, done)", function() {
-		it("should mark the item with given id as done", function() {
-			scope.vm.todos = [{ title: "a", done: false}, { title: "b", done: false}];
-
-			scope.vm.updateStatus(1, true);
-
-			expect(scope.vm.todos[0].done).toBe(false);
-			expect(scope.vm.todos[1].done).toBe(true);
-
-			scope.vm.updateStatus(1, false);
-			expect(scope.vm.todos[0].done).toBe(false);
-			expect(scope.vm.todos[1].done).toBe(false);
 		});
 	});
 
