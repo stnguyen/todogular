@@ -27,7 +27,7 @@ describe("TodoCtrl", function() {
 
 			scope.vm.addNewTodo();
 
-			var item = { title: scope.vm.newTodo , done: false };
+			var item = { title: "new item" , done: false };
 			expect(scope.vm.todos).toEqualData([item]);
 		});
 	});
